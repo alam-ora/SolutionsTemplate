@@ -139,4 +139,29 @@ When you run an apply job for a Stack, Terraform creates the resources and execu
 
 ### STEP 5 : Validate the Cloud Resources
 
+This solution creates the following Oracle Cloud resources :
 
+* Linux VM
+* Virtual Cloud Network
+
+Complete the following steps to validate the cloud resources created. 
+
+#### 5-1 : Validate Connectivity to the Linux VM
+
+You connect to a running instance by using a Secure Shell (SSH) connection. Most Linux distributions include an SSH client by default. For Windows, you can download a free SSH client called PuTTY from [http://www.putty.org](http://www.putty.org).
+
+**Get the Public IP Address of the Linux VM**
+
+1. Navigate to the Linux VM that was created in your compartment from the Navigation Menu on the left and select **Compute** -> **Instances**. 
+
+![](./images/nav-compute-instances.png)
+
+2. Click on the instance that was just created (instance name starts with **VM**).
+
+![](./images/compute-instance.png)
+
+3. On the **Instance Details** page, locate the Public IP Address of the VM as follows :
+
+![](./images/vm-public-ip.png)
+
+4. 
