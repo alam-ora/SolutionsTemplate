@@ -2,7 +2,7 @@
 
 **Resource Manager** is an Oracle Cloud Infrastructure service that allows you to automate the process of provisioning your Oracle Cloud Infrastructure resources. In this section you will use **Resource Manager** to provision the resources required for this solution.
 
-> **Resource Manager** uses Terraform to help install, configure, and manage cloud resources through the "infrastructure-as-code" model. Click [here](https://docs.cloud.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm) to learn more about OCI Resource Manager.
+> **Resource Manager** uses Terraform to help install, configure, and manage cloud resources through the "infrastructure-as-code" model. Click [here](https://docs.cloud.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm) to learn more about Resource Manager.
 
 ### Prerequisites
 
@@ -14,7 +14,7 @@
 
 Sign in to your **Cloud Account** from Oracle Cloud website. You will be prompted to enter your cloud tenant, user name, and password.
 
-> For more details, refer to the documentation on [*Getting Started with Oracle Cloud*](https://docs.oracle.com/en/cloud/get-started/subscriptions-cloud/csgsg/sign-your-account-oracle-cloud-website.html).
+> For detailed sign in instructions, refer to the documentation on [*Getting Started with Oracle Cloud*](https://docs.oracle.com/en/cloud/get-started/subscriptions-cloud/csgsg/sign-your-account-oracle-cloud-website.html).
 
 ### STEP 2 : Create the Stack
 
@@ -41,7 +41,7 @@ Creating a **Stack** involves uploading the Terraform configuration file, provid
 	* From the **Create in Compartment** drop-down, select the **Compartment** where you want to create the stack.
 	
 	* Select the **Terraform Version** as **0.11.x**. 
-		>Note that the Terraform version is not backward compatible.
+		>The Terraform version is not backwards compatible so ensure you select the correct version.
 
 	* Optionally, you can apply tags. 
 		>Refer to the documentation section [*Tagging Overview*](https://docs.cloud.oracle.com/en-us/iaas/Content/Tagging/Concepts/taggingoverview.htm) for details on OCI Tagging.
@@ -50,7 +50,7 @@ Creating a **Stack** involves uploading the Terraform configuration file, provid
 
 ![](./images/stacks-info.png)
 
-4. Configure the variables the cloud resources will need when the stack gets created and when you run the apply job. Enter the following values in this dialog :
+4. Configure the variables the cloud resources will require when creating the Stack, and also when you run the Apply job (next Step). Enter the following values in this dialog :
 
 	* **Tenancy OCID** & **Compartment OCID**.
 
@@ -58,7 +58,7 @@ Creating a **Stack** involves uploading the Terraform configuration file, provid
 
 	* Enter the Cloud **Region**'s identifier where you like the resources to be created. 
 
-		>Refer to the documentation on Cloud [Regions](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) to get the identifier for the region.
+		>Refer to the documentation on [Cloud Regions](https://docs.cloud.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) to get the identifier for the region.
 
 	* Enter the **Public Key** to be used by the VM (public key begins with **ssh-rsa** as in the below screeshot).
 
