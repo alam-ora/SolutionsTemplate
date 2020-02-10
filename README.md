@@ -1,6 +1,6 @@
 # Provision Cloud Resources Using Resource Manager
 
-In this section you will use Oracle Cloud Infrastructure **Resource Manager** to provision the cloud resources required for this solution.
+**Resource Manager** is an Oracle Cloud Infrastructure service that allows you to automate the process of provisioning your Oracle Cloud Infrastructure resources. In this section you will use **Resource Manager** to provision the resources required for this solution.
 
 > **Resource Manager** uses Terraform to help install, configure, and manage cloud resources through the "infrastructure-as-code" model. Click [here](https://docs.cloud.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm) to learn more about OCI Resource Manager.
 
