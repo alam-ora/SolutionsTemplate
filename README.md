@@ -164,33 +164,30 @@ You connect to a running instance by using a Secure Shell (SSH) connection. Most
 
 ![](./images/vm-public-ip.png)
 
-4. Locate the SSH private key pair used for the VM (specified at Stack creation time).
+**Connecting From a Unix-style System**
 
-**Connect to the Linux VM From a Unix-style System**
+1. Locate the SSH private key of the pair used for the VM (The public key of the pair was specified at Stack creation time).
 
-1. Use the following command to set the file permissions so that only you can read the file :
+2. Use the following command to set the file permissions so that only you can read the file :
 
 ```
 $ chmod 400 <private_key>
 ```
+>Where **\<private_key\>** is the full path and name of the file that contains the private key associated with the instance.
 
-	Where **\<private_key\>** is the full path and name of the file that contains the private key associated with the instance.
+3. Use the following SSH command to access the instance.
 
-2. Use the following SSH command to access the instance.
+```
+$ ssh –i <private_key> opc@<public-ip-address>
+```
 
-````
-<copy>$ ssh –i <private_key> *opc*@<public-ip-address></copy>
-````
+>Where **\<public-ip-address\>** is your instance IP address that you retrieved from the Console.
 
-<private_key> is the full path and name of the file that contains the private key associated with the instance you want to access.
+4. The following is a screenshot of a successful connection.
 
-<username> is the default name for the instance. For Oracle Linux and CentOS images, the default user name is **opc**. For Ubuntu images, the default name is **ubuntu**.
+![](./images/ssh-linux-example.png)
 
-<public-ip-address> is your instance IP address that you retrieved from the Console.
-
-2. ee
-
-**Connect to the Linux VM From a Windows System**
+**Connecting From a Windows System**
 
 1. 22
 
